@@ -11,16 +11,68 @@ const colors = {
 
 const labels = {
   outcome_volume: "Outcome volume",
-  high_impact: "High-impact PRs",
+  high_impact: "Top-quartile PRs",
   depth: "Depth of strongest PRs",
   quality: "Quality evidence",
   breadth: "Breadth",
   collaboration: "Collaboration",
 };
 
+const fallbackPresets = {
+  balanced: {
+    name: "Balanced",
+    description: "Default lens: balances outcome volume, high-signal PRs, depth, quality, breadth, and collaboration.",
+    weights: {
+      outcome_volume: 0.3,
+      high_impact: 0.22,
+      depth: 0.16,
+      quality: 0.14,
+      breadth: 0.1,
+      collaboration: 0.08,
+    },
+  },
+  outcomes: {
+    name: "Outcomes",
+    description: "Rewards sustained delivery and top-quartile PR volume while still keeping quality in view.",
+    weights: {
+      outcome_volume: 0.38,
+      high_impact: 0.27,
+      depth: 0.15,
+      quality: 0.1,
+      breadth: 0.06,
+      collaboration: 0.04,
+    },
+  },
+  quality: {
+    name: "Quality",
+    description: "Emphasizes validation, issue linkage, clear PR context, and strong individual PR depth.",
+    weights: {
+      outcome_volume: 0.1,
+      high_impact: 0.14,
+      depth: 0.24,
+      quality: 0.34,
+      breadth: 0.08,
+      collaboration: 0.1,
+    },
+  },
+  leverage: {
+    name: "Leverage",
+    description: "Highlights engineers whose work spans systems and attracts review discussion or peer recognition.",
+    weights: {
+      outcome_volume: 0.12,
+      high_impact: 0.1,
+      depth: 0.14,
+      quality: 0.18,
+      breadth: 0.24,
+      collaboration: 0.22,
+    },
+  },
+};
+
 const state = {
   mode: "top",
   selected: null,
+  preset: null,
 };
 
 function $(id) {
@@ -61,7 +113,42 @@ function escapeHtml(value) {
 }
 
 function visibleEngineers() {
-  return state.mode === "top" ? data.top_engineers : data.engineers;
+  return rankedEngineers().slice(0, 5);
+}
+
+function presets() {
+  return data.method?.presets || fallbackPresets;
+}
+
+function presetIds() {
+  return Object.keys(presets());
+}
+
+function activePreset() {
+  return presets()[state.preset] || presets().balanced || Object.values(presets())[0];
+}
+
+function balancedPreset() {
+  return presets().balanced || activePreset();
+}
+
+function scoreFor(row, presetId = state.preset) {
+  const preset = presets()[presetId] || activePreset();
+  if (row.preset_scores?.[presetId] != null) {
+    return row.preset_scores[presetId];
+  }
+  return Object.entries(preset.weights).reduce((sum, [key, weight]) => sum + weight * (row.score_breakdown?.[key] || 0), 0);
+}
+
+function rankedEngineers(presetId = state.preset) {
+  return [...data.engineers].sort((a, b) => {
+    const scoreDiff = scoreFor(b, presetId) - scoreFor(a, presetId);
+    return scoreDiff || b.score - a.score || a.login.localeCompare(b.login);
+  });
+}
+
+function rankFor(login, presetId = state.preset) {
+  return rankedEngineers(presetId).findIndex((row) => row.login === login) + 1;
 }
 
 function stackedBar(row) {
@@ -89,7 +176,7 @@ function renderRanking() {
               <div class="rank-name">${escapeHtml(row.login)}</div>
               <div class="rank-meta">${row.pr_count} PRs - ${row.high_impact_prs} top-quartile - ${escapeHtml(row.dominant_category)}</div>
             </div>
-            <span class="score-pill">${row.score}</span>
+            <span class="score-pill">${scoreFor(row).toFixed(1)}</span>
           </div>
           <div class="stacked" aria-hidden="true">${stackedBar(row)}</div>
         </button>
@@ -104,7 +191,7 @@ function renderRanking() {
 
 function renderSelect() {
   const select = $("engineerSelect");
-  select.innerHTML = data.engineers
+  select.innerHTML = rankedEngineers()
     .map((row, index) => `<option value="${escapeHtml(row.login)}">#${index + 1} ${escapeHtml(row.login)}</option>`)
     .join("");
   select.value = state.selected;
@@ -112,13 +199,15 @@ function renderSelect() {
 }
 
 function renderBreakdown(row) {
+  const preset = activePreset();
   $("scoreBreakdown").innerHTML = Object.entries(row.score_breakdown)
     .map(([key, value]) => {
+      const contribution = value * (preset.weights[key] || 0);
       return `
         <div class="metric-row">
           <span>${labels[key]}</span>
           <div class="bar-track"><div class="bar-fill" style="width:${value}%"></div></div>
-          <span class="metric-value">${value}</span>
+          <span class="metric-value">${contribution.toFixed(1)}</span>
         </div>
       `;
     })
@@ -169,14 +258,21 @@ function renderEvidence(row) {
 }
 
 function renderDetail(row) {
+  const preset = activePreset();
+  const selectedRank = rankFor(row.login);
+  const balancedRank = rankFor(row.login, "balanced");
+  const rankDelta = balancedRank && selectedRank ? balancedRank - selectedRank : 0;
+  const rankDeltaLabel = rankDelta === 0 ? "same rank" : `${rankDelta > 0 ? "+" : ""}${rankDelta} vs balanced`;
   $("avatar").src = row.avatar_url;
   $("avatar").alt = `${row.login} avatar`;
   $("engineerName").textContent = row.login;
   $("profileLink").href = row.profile_url;
   $("engineerSummary").textContent =
-    `${row.score} impact score from ${row.pr_count} merged PRs, median review cycle ${row.median_cycle_label}, ` +
+    `#${selectedRank} by ${preset.name.toLowerCase()} model (${scoreFor(row).toFixed(1)} score, ${rankDeltaLabel}), ` +
+    `${row.pr_count} merged PRs, median review cycle ${row.median_cycle_label}, ` +
     `${pct(row.tested_rate)} validated and ${pct(row.issue_linked_rate)} issue-linked.`;
   $("whyList").innerHTML = row.why.map((item) => `<div class="why-item">${escapeHtml(item)}</div>`).join("");
+  renderPresetPanel(row);
   renderBreakdown(row);
   renderCategoryMix(row);
   renderEvidence(row);
@@ -188,6 +284,56 @@ function selectEngineer(login) {
   state.selected = login;
   const row = data.engineers.find((engineer) => engineer.login === login) || data.top_engineers[0];
   renderDetail(row);
+}
+
+function renderPresetControls() {
+  const toggle = $("presetToggle");
+  if (!toggle) return;
+  toggle.innerHTML = presetIds()
+    .map((id) => {
+      const preset = presets()[id];
+      return `<button class="preset-button ${id === state.preset ? "active" : ""}" type="button" data-preset="${id}">${escapeHtml(preset.name)}</button>`;
+    })
+    .join("");
+  toggle.querySelectorAll(".preset-button").forEach((button) => {
+    button.addEventListener("click", () => selectPreset(button.dataset.preset));
+  });
+}
+
+function selectPreset(presetId) {
+  state.preset = presetId;
+  const top = visibleEngineers()[0] || data.engineers[0];
+  state.selected = top?.login || state.selected;
+  renderSelect();
+  renderPresetControls();
+  selectEngineer(state.selected);
+}
+
+function renderPresetPanel(row) {
+  const preset = activePreset();
+  const base = balancedPreset();
+  $("presetName").textContent = preset.name;
+  $("presetDescription").textContent = preset.description;
+  $("weightComparison").innerHTML = Object.keys(labels)
+    .map((key) => {
+      const activeWeight = preset.weights[key] || 0;
+      const baseWeight = base.weights[key] || 0;
+      const delta = Math.round((activeWeight - baseWeight) * 100);
+      const deltaLabel = delta === 0 ? "0" : `${delta > 0 ? "+" : ""}${delta}`;
+      const activeContribution = (row.score_breakdown?.[key] || 0) * activeWeight;
+      return `
+        <div class="weight-row">
+          <span>${labels[key]}</span>
+          <div class="weight-bars">
+            <div class="weight-track base"><span style="width:${baseWeight * 100}%"></span></div>
+            <div class="weight-track active"><span style="width:${activeWeight * 100}%"></span></div>
+          </div>
+          <span class="weight-value">${Math.round(activeWeight * 100)}% (${deltaLabel})</span>
+          <span class="weight-score">${activeContribution.toFixed(1)} pts</span>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function renderMethod() {
@@ -222,8 +368,10 @@ function init() {
   $("updatedLabel").textContent = `Generated ${fmtDate(data.generated_at)}`;
   $("repoLink").href = data.repo_url;
 
-  state.selected = data.top_engineers[0]?.login;
+  state.preset = data.method?.default_preset || "balanced";
+  state.selected = rankedEngineers()[0]?.login || data.top_engineers[0]?.login;
   renderSelect();
+  renderPresetControls();
   renderMethod();
   renderRanking();
   selectEngineer(state.selected);
