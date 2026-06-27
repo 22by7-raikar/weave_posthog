@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PostHog Engineering Impact</title>
+    <link rel="stylesheet" href="./styles.css?v=20260627" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PostHog repo analysis</p>
+          <h1>Engineering impact dashboard</h1>
+        </div>
+        <div class="header-stats" aria-label="Dataset summary">
+          <div>
+            <span id="totalPrs">-</span>
+            <small>merged PRs</small>
+          </div>
+          <div>
+            <span id="engineerCount">-</span>
+            <small>eligible engineers</small>
+          </div>
+          <div>
+            <span id="windowLabel">-</span>
+            <small>analysis window</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="toolbar" aria-label="Dashboard controls">
+        <div class="segmented" role="tablist" aria-label="View mode">
+          <button class="segment active" id="topMode" type="button">Top 5</button>
+        </div>
+        <label class="select-label">
+          Engineer
+          <select id="engineerSelect"></select>
+        </label>
+        <a id="repoLink" class="source-link" href="https://github.com/PostHog/posthog" target="_blank" rel="noreferrer">Open repo</a>
+      </section>
+
+      <section class="dashboard-grid">
+        <aside class="ranking-panel" aria-labelledby="rankingTitle">
+          <div class="panel-title">
+            <h2 id="rankingTitle">Most impactful engineers</h2>
+            <span id="updatedLabel">Generated -</span>
+          </div>
+          <div id="rankingList" class="ranking-list"></div>
+        </aside>
+
+        <section class="detail-panel" aria-live="polite">
+          <div class="engineer-head">
+            <img id="avatar" alt="" />
+            <div>
+              <p class="eyebrow">Selected engineer</p>
+              <h2 id="engineerName">-</h2>
+              <p id="engineerSummary" class="summary"></p>
+            </div>
+            <a id="profileLink" class="profile-link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div id="whyList" class="why-list"></div>
+
+          <div class="detail-columns">
+            <div>
+              <h3>Score breakdown</h3>
+              <div id="scoreBreakdown" class="metric-bars"></div>
+            </div>
+            <div>
+              <h3>Contribution mix</h3>
+              <div id="categoryMix" class="category-mix"></div>
+            </div>
+          </div>
+
+          <div class="evidence-head">
+            <h3>PR evidence</h3>
+            <span>Top weighted examples, all linked back to GitHub</span>
+          </div>
+          <div id="prEvidence" class="evidence-list"></div>
+        </section>
+      </section>
+
+      <section class="method-panel">
+        <details>
+          <summary>Impact definition, weights, and caveats</summary>
+          <div id="methodContent" class="method-content"></div>
+        </details>
+      </section>
+    </main>
+    <script src="./data.js?v=20260627"></script>
+    <script src="./app.js?v=20260627"></script>
+  </body>
+</html>
