@@ -41,7 +41,7 @@ Elapsed time: 37 minutes 28 seconds
 ## Final Results
 
 Dashboard URL:
-https://raw.githack.com/22by7-raikar/weave_posthog/master/impact-dashboard/index.html
+https://htmlpreview.github.io/?https://github.com/22by7-raikar/weave_posthog/blob/master/impact-dashboard/index.html
 
 Top five:
 
