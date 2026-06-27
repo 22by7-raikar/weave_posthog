@@ -257,6 +257,33 @@ function renderEvidence(row) {
     .join("");
 }
 
+function buildWhy(row) {
+  const bullets = [];
+
+  // Bullet 1: Real scopes from PR data, not an abstract count
+  const topScopes = (row.top_scopes || []).slice(0, 4).map(([s]) => s.replace(/-/g, " "));
+  const scopeStr = topScopes.length
+    ? `focused on ${topScopes.slice(0, 3).join(", ")}${topScopes.length > 3 ? ", and more" : ""}`
+    : `across ${(row.dominant_category || "mixed").toLowerCase()} work`;
+  bullets.push(`${row.dominant_category} contributor with ${row.pr_count} PRs ${scopeStr}`);
+
+  // Bullet 2: Quality signal + a real PR title as inline evidence
+  const topPr = (row.top_prs || [])[0];
+  const qualityStr = `${pct(row.tested_rate)} of PRs validated, ${pct(row.issue_linked_rate)} issue-linked`;
+  const exampleStr = topPr
+    ? ` \u2014 e.g. \u201c${topPr.title.length > 70 ? topPr.title.slice(0, 70) + "\u2026" : topPr.title}\u201d`
+    : "";
+  bullets.push(qualityStr + exampleStr);
+
+  // Bullet 3: High-impact hit rate + avg depth together
+  const hitRate = row.pr_count > 0 ? Math.round((row.high_impact_prs / row.pr_count) * 100) : 0;
+  bullets.push(
+    `${row.high_impact_prs} of ${row.pr_count} PRs hit the top-quartile bar (${hitRate}% hit rate); avg top-5 PR score: ${(row.avg_top_pr_points || 0).toFixed(1)}`
+  );
+
+  return bullets;
+}
+
 function renderDetail(row) {
   const preset = activePreset();
   const selectedRank = rankFor(row.login);
@@ -271,7 +298,7 @@ function renderDetail(row) {
     `#${selectedRank} by ${preset.name.toLowerCase()} model (${scoreFor(row).toFixed(1)} score, ${rankDeltaLabel}), ` +
     `${row.pr_count} merged PRs, median review cycle ${row.median_cycle_label}, ` +
     `${pct(row.tested_rate)} validated and ${pct(row.issue_linked_rate)} issue-linked.`;
-  $("whyList").innerHTML = row.why.map((item) => `<div class="why-item">${escapeHtml(item)}</div>`).join("");
+  $("whyList").innerHTML = buildWhy(row).map((item) => `<div class="why-item">${escapeHtml(item)}</div>`).join("");
   renderPresetPanel(row);
   renderBreakdown(row);
   renderCategoryMix(row);
