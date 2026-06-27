@@ -2,7 +2,7 @@
 
 ## Dashboard
 
-URL: https://htmlpreview.github.io/?https://github.com/22by7-raikar/weave_posthog/blob/master/impact-dashboard/index.html
+URL: https://22by7-raikar.github.io/weave_posthog/
 
 ## Approach
 

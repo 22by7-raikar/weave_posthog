@@ -30,6 +30,28 @@ Elapsed time: 1 hour 37 minutes
    `22by7-raikar/weave_posthog`.
 11. Published the dashboard under `impact-dashboard/`.
 
+## Follow-up Session (GitHub Copilot, same day)
+
+12. Confirmed the 4 necessary files (`index.html`, `styles.css`, `app.js`,
+    `data.js`) are fully self-contained — all 9,590 PRs of analysis embedded
+    inline in `data.js`; no server or build step required.
+13. Created a `docs/` folder for GitHub Pages and expanded the sparse-checkout
+    definition to include it.
+14. Staged and committed the 4 dashboard files plus `docs/` in two commits,
+    resolved rebase conflicts against upstream PostHog changes, and pushed
+    both commits to `origin/master`.
+15. Identified a weak spot in the "why" bullets: they were pre-computed static
+    strings that could not be directly validated against the PR evidence panel.
+16. Replaced the static `row.why` strings with a `buildWhy()` function in
+    `app.js` that generates 3 bullets dynamically from real data:
+    - Bullet 1: dominant category + PR count + actual top-scope names from
+      `top_scopes` (e.g. "data warehouse, postgres, mysql").
+    - Bullet 2: validated/issue-linked rates + the title of the #1 scoring PR
+      verbatim, so the claim is directly checkable against the evidence panel.
+    - Bullet 3: top-quartile hit rate as a percentage + avg top-5 PR score,
+      giving the raw count meaningful context.
+17. Committed and pushed the fix to `docs/app.js` and `impact-dashboard/app.js`.
+
 ## Key Design Decisions
 
 - Use merged PRs as the complete unit of public engineering work for the
@@ -41,6 +63,9 @@ Elapsed time: 1 hour 37 minutes
   collaboration.
 - Keep every top result linked to PR evidence so a busy engineering leader can
   validate the ranking without reading the whole repository.
+- Generate "why" bullets dynamically from real PR titles and scope names rather
+  than pre-computed strings, so every claim in the summary panel points to
+  evidence that can be verified in the same view.
 
 ## Files Created
 
@@ -49,13 +74,23 @@ Elapsed time: 1 hour 37 minutes
 - `site/index.html`
 - `site/styles.css`
 - `site/app.js`
+- `site/data.js`
+- `impact-dashboard/index.html`
+- `impact-dashboard/styles.css`
+- `impact-dashboard/app.js`
+- `impact-dashboard/data.js`
+- `docs/index.html` (GitHub Pages source)
+- `docs/styles.css`
+- `docs/app.js`
+- `docs/data.js`
+- `docs/.nojekyll`
 - `SUBMISSION.md`
 - `AGENT_SESSION_EXPORT.md`
 
 ## Final Results
 
 Dashboard URL:
-https://htmlpreview.github.io/?https://github.com/22by7-raikar/weave_posthog/blob/master/impact-dashboard/index.html
+https://22by7-raikar.github.io/weave_posthog/
 
 Top five:
 
