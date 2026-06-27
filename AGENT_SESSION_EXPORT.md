@@ -58,9 +58,19 @@ Elapsed time: 1 hour 37 minutes
   assignment window.
 - Query by merge date to avoid search truncation.
 - Exclude obvious bot accounts and authors with fewer than three merged PRs.
-- Use a balanced score instead of raw volume:
-  outcome volume, high-impact PRs, depth, quality evidence, breadth, and
-  collaboration.
+- Use a weighted composite score instead of raw volume. Six dimensions with
+  default (Balanced) weights:
+  - Outcome volume 30% — log-scaled sum of PR impact points so sustained
+    delivery helps but cannot dominate alone.
+  - Top-quartile PRs 22% — count of PRs scoring above the dataset's 75th
+    percentile by weighted impact.
+  - Depth of strongest PRs 16% — average score of the engineer's five best PRs.
+  - Quality evidence 14% — test signals, issue linkage, and clear
+    problem/change narratives in PR bodies.
+  - Breadth 10% — distinct scopes and contribution categories touched.
+  - Collaboration 8% — review discussion volume and positive peer reactions.
+  Four presets (Balanced, Outcomes, Quality, Leverage) let a reader re-rank
+  under different priorities without changing the underlying data.
 - Keep every top result linked to PR evidence so a busy engineering leader can
   validate the ranking without reading the whole repository.
 - Generate "why" bullets dynamically from real PR titles and scope names rather
