@@ -1,0 +1,1924 @@
+{
+  "category_totals": {
+    "Documentation": 164,
+    "Engineering Quality": 179,
+    "Maintenance": 383,
+    "Platform": 774,
+    "Product": 3920,
+    "Reliability": 4170
+  },
+  "daily_counts": {
+    "2026-03-29": 1,
+    "2026-03-30": 106,
+    "2026-03-31": 124,
+    "2026-04-01": 124,
+    "2026-04-02": 107,
+    "2026-04-03": 57,
+    "2026-04-04": 24,
+    "2026-04-05": 6,
+    "2026-04-06": 71,
+    "2026-04-07": 94,
+    "2026-04-08": 114,
+    "2026-04-09": 133,
+    "2026-04-10": 122,
+    "2026-04-11": 7,
+    "2026-04-12": 16,
+    "2026-04-13": 124,
+    "2026-04-14": 122,
+    "2026-04-15": 107,
+    "2026-04-16": 149,
+    "2026-04-17": 113,
+    "2026-04-18": 20,
+    "2026-04-19": 16,
+    "2026-04-20": 133,
+    "2026-04-21": 136,
+    "2026-04-22": 155,
+    "2026-04-23": 175,
+    "2026-04-24": 128,
+    "2026-04-25": 17,
+    "2026-04-26": 11,
+    "2026-04-27": 118,
+    "2026-04-28": 150,
+    "2026-04-29": 135,
+    "2026-04-30": 137,
+    "2026-05-01": 92,
+    "2026-05-02": 32,
+    "2026-05-03": 22,
+    "2026-05-04": 108,
+    "2026-05-05": 148,
+    "2026-05-06": 118,
+    "2026-05-07": 126,
+    "2026-05-08": 101,
+    "2026-05-09": 12,
+    "2026-05-10": 6,
+    "2026-05-11": 17,
+    "2026-05-12": 41,
+    "2026-05-13": 41,
+    "2026-05-14": 101,
+    "2026-05-15": 20,
+    "2026-05-16": 5,
+    "2026-05-17": 17,
+    "2026-05-18": 125,
+    "2026-05-19": 124,
+    "2026-05-20": 131,
+    "2026-05-21": 161,
+    "2026-05-22": 124,
+    "2026-05-23": 23,
+    "2026-05-24": 4,
+    "2026-05-25": 92,
+    "2026-05-26": 133,
+    "2026-05-27": 118,
+    "2026-05-28": 127,
+    "2026-05-29": 145,
+    "2026-05-30": 21,
+    "2026-05-31": 19,
+    "2026-06-01": 160,
+    "2026-06-02": 147,
+    "2026-06-03": 201,
+    "2026-06-04": 158,
+    "2026-06-05": 167,
+    "2026-06-06": 39,
+    "2026-06-07": 39,
+    "2026-06-08": 130,
+    "2026-06-09": 207,
+    "2026-06-10": 153,
+    "2026-06-11": 228,
+    "2026-06-12": 214,
+    "2026-06-13": 18,
+    "2026-06-14": 7,
+    "2026-06-15": 164,
+    "2026-06-16": 332,
+    "2026-06-17": 247,
+    "2026-06-18": 231,
+    "2026-06-19": 185,
+    "2026-06-20": 31,
+    "2026-06-21": 19,
+    "2026-06-22": 190,
+    "2026-06-23": 253,
+    "2026-06-24": 244,
+    "2026-06-25": 203,
+    "2026-06-26": 196,
+    "2026-06-27": 21
+  },
+  "data_generated_at": "2026-06-27T18:19:29.568229+00:00",
+  "eligible_engineers": 127,
+  "engineers": [
+    {
+      "avatar_url": "https://github.com/Gilbert09.png?size=96",
+      "avg_top_pr_points": 15.75,
+      "category_counts": {
+        "Documentation": 6,
+        "Engineering Quality": 0,
+        "Maintenance": 1,
+        "Platform": 31,
+        "Product": 260,
+        "Reliability": 435
+      },
+      "category_points": {
+        "Documentation": 37.21,
+        "Engineering Quality": 0,
+        "Maintenance": 4.99,
+        "Platform": 362.33,
+        "Product": 3386.53,
+        "Reliability": 6113.84
+      },
+      "comments_received": 3022,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 347,
+      "issue_linked_rate": 0.115,
+      "login": "Gilbert09",
+      "median_cycle_hours": 15.4,
+      "median_cycle_label": "15.4h",
+      "positive_reactions": 1540,
+      "pr_count": 733,
+      "problem_rate": 0.98,
+      "profile_url": "https://github.com/Gilbert09",
+      "quality_index_raw": 0.637,
+      "scope_breadth_raw": 79,
+      "score": 93.3,
+      "score_breakdown": {
+        "breadth": 90.0,
+        "collaboration": 100.0,
+        "depth": 93.7,
+        "high_impact": 100.0,
+        "outcome_volume": 100.0,
+        "quality": 66.6
+      },
+      "tested_rate": 0.891,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65125,
+          "points": 15.93,
+          "positive_reactions": 3,
+          "title": "fix(google-search-console): match property URLs case-insensitively by scheme and host",
+          "url": "https://github.com/PostHog/posthog/pull/65125",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65071,
+          "points": 15.77,
+          "positive_reactions": 2,
+          "title": "fix(linkedin_ads): retry non-JSON API responses instead of crashing",
+          "url": "https://github.com/PostHog/posthog/pull/65071",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65082,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "fix(bigquery): treat unparseable private key as non-retryable",
+          "url": "https://github.com/PostHog/posthog/pull/65082",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 64781,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "fix(mysql): retry connect timeouts in-process",
+          "url": "https://github.com/PostHog/posthog/pull/64781",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 6,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 64227,
+          "points": 15.61,
+          "positive_reactions": 2,
+          "title": "fix(data-warehouse): show a friendly error when schema discovery times out",
+          "url": "https://github.com/PostHog/posthog/pull/64227",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "data-warehouse",
+          365
+        ],
+        [
+          "postgres",
+          85
+        ],
+        [
+          "mysql",
+          24
+        ],
+        [
+          "bigquery",
+          23
+        ],
+        [
+          "data-imports",
+          16
+        ],
+        [
+          "google_ads",
+          13
+        ],
+        [
+          "snowflake",
+          12
+        ],
+        [
+          "linkedin_ads",
+          10
+        ]
+      ],
+      "total_points": 9904.9,
+      "why": [
+        "347 top-quartile PRs across 5 contribution types",
+        "89% of PRs show explicit validation and 12% link to tracked issues",
+        "Strongest signal: reliability (6113.8 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/pauldambra.png?size=96",
+      "avg_top_pr_points": 16.11,
+      "category_counts": {
+        "Documentation": 6,
+        "Engineering Quality": 31,
+        "Maintenance": 20,
+        "Platform": 44,
+        "Product": 228,
+        "Reliability": 213
+      },
+      "category_points": {
+        "Documentation": 41.96,
+        "Engineering Quality": 319.98,
+        "Maintenance": 109.6,
+        "Platform": 547.07,
+        "Product": 2975.1,
+        "Reliability": 2993.9
+      },
+      "comments_received": 3413,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 187,
+      "issue_linked_rate": 0.411,
+      "login": "pauldambra",
+      "median_cycle_hours": 7.3,
+      "median_cycle_label": "7.3h",
+      "positive_reactions": 1335,
+      "pr_count": 542,
+      "problem_rate": 0.969,
+      "profile_url": "https://github.com/pauldambra",
+      "quality_index_raw": 0.617,
+      "scope_breadth_raw": 108,
+      "score": 90.8,
+      "score_breakdown": {
+        "breadth": 100.0,
+        "collaboration": 99.9,
+        "depth": 100.0,
+        "high_impact": 89.5,
+        "outcome_volume": 93.9,
+        "quality": 64.2
+      },
+      "tested_rate": 0.62,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 15,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58095,
+          "points": 16.17,
+          "positive_reactions": 3,
+          "title": "perf(frontend): defer authenticated shell to lazy chunk",
+          "url": "https://github.com/PostHog/posthog/pull/58095",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 14,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 61363,
+          "points": 16.17,
+          "positive_reactions": 3,
+          "title": "fix(caching): share query_cache RedisCluster client process-wide",
+          "url": "https://github.com/PostHog/posthog/pull/61363",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62698,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): three memory-leak mop-ups from the background-tab investigation",
+          "url": "https://github.com/PostHog/posthog/pull/62698",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62957,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): load monaco lazily via a CodeEditor facade",
+          "url": "https://github.com/PostHog/posthog/pull/62957",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 63142,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): release the Max thread graph from the authenticated shell",
+          "url": "https://github.com/PostHog/posthog/pull/63142",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "taxonomic-filter",
+          46
+        ],
+        [
+          "frontend",
+          46
+        ],
+        [
+          "replay",
+          40
+        ],
+        [
+          "user-interviews",
+          36
+        ],
+        [
+          "insights",
+          30
+        ],
+        [
+          "mcp-analytics",
+          25
+        ],
+        [
+          "subscriptions",
+          23
+        ],
+        [
+          "llma",
+          18
+        ]
+      ],
+      "total_points": 6987.61,
+      "why": [
+        "187 top-quartile PRs across 6 contribution types",
+        "62% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: reliability (2993.9 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/sampennington.png?size=96",
+      "avg_top_pr_points": 15.53,
+      "category_counts": {
+        "Documentation": 3,
+        "Engineering Quality": 12,
+        "Maintenance": 6,
+        "Platform": 24,
+        "Product": 179,
+        "Reliability": 131
+      },
+      "category_points": {
+        "Documentation": 21.61,
+        "Engineering Quality": 127.99,
+        "Maintenance": 32.85,
+        "Platform": 310.11,
+        "Product": 2359.93,
+        "Reliability": 1804.93
+      },
+      "comments_received": 1692,
+      "dominant_category": "Product",
+      "high_impact_prs": 132,
+      "issue_linked_rate": 0.408,
+      "login": "sampennington",
+      "median_cycle_hours": 8.1,
+      "median_cycle_label": "8.1h",
+      "positive_reactions": 675,
+      "pr_count": 355,
+      "problem_rate": 0.986,
+      "profile_url": "https://github.com/sampennington",
+      "quality_index_raw": 0.685,
+      "scope_breadth_raw": 53,
+      "score": 83.7,
+      "score_breakdown": {
+        "breadth": 77.2,
+        "collaboration": 87.7,
+        "depth": 89.9,
+        "high_impact": 83.6,
+        "outcome_volume": 86.8,
+        "quality": 72.6
+      },
+      "tested_rate": 0.766,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60843,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "fix(funnels): flow horizontal funnel rows to fit step text",
+          "url": "https://github.com/PostHog/posthog/pull/60843",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 6,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62803,
+          "points": 15.61,
+          "positive_reactions": 2,
+          "title": "fix(quill): clean up charts package public API and core layering",
+          "url": "https://github.com/PostHog/posthog/pull/62803",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 57845,
+          "points": 15.52,
+          "positive_reactions": 2,
+          "title": "fix(trends): move annotation to correct bar for compare against in hog-charts",
+          "url": "https://github.com/PostHog/posthog/pull/57845",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58711,
+          "points": 15.44,
+          "positive_reactions": 2,
+          "title": "fix(insights): coerce aggregation_target type in multi-source funnels",
+          "url": "https://github.com/PostHog/posthog/pull/58711",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 61054,
+          "points": 15.38,
+          "positive_reactions": 2,
+          "title": "fix(insights): render and style goal lines correctly in hog-charts",
+          "url": "https://github.com/PostHog/posthog/pull/61054",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "insights",
+          150
+        ],
+        [
+          "hog-charts",
+          72
+        ],
+        [
+          "funnels",
+          14
+        ],
+        [
+          "mcp",
+          11
+        ],
+        [
+          "mcp-analytics",
+          10
+        ],
+        [
+          "quill-charts",
+          10
+        ],
+        [
+          "charts",
+          9
+        ],
+        [
+          "trends",
+          8
+        ]
+      ],
+      "total_points": 4657.42,
+      "why": [
+        "132 top-quartile PRs across 6 contribution types",
+        "77% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: product (2359.9 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/andrewm4894.png?size=96",
+      "avg_top_pr_points": 15.51,
+      "category_counts": {
+        "Documentation": 5,
+        "Engineering Quality": 0,
+        "Maintenance": 10,
+        "Platform": 18,
+        "Product": 183,
+        "Reliability": 76
+      },
+      "category_points": {
+        "Documentation": 35.21,
+        "Engineering Quality": 0,
+        "Maintenance": 51.05,
+        "Platform": 220.49,
+        "Product": 2372.1,
+        "Reliability": 1042.68
+      },
+      "comments_received": 1443,
+      "dominant_category": "Product",
+      "high_impact_prs": 83,
+      "issue_linked_rate": 0.356,
+      "login": "andrewm4894",
+      "median_cycle_hours": 1.9,
+      "median_cycle_label": "1.9h",
+      "positive_reactions": 683,
+      "pr_count": 292,
+      "problem_rate": 0.986,
+      "profile_url": "https://github.com/andrewm4894",
+      "quality_index_raw": 0.659,
+      "scope_breadth_raw": 32,
+      "score": 78.6,
+      "score_breakdown": {
+        "breadth": 61.2,
+        "collaboration": 86.3,
+        "depth": 89.5,
+        "high_impact": 75.7,
+        "outcome_volume": 82.9,
+        "quality": 69.3
+      },
+      "tested_rate": 0.75,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58087,
+          "points": 16.0,
+          "positive_reactions": 3,
+          "title": "fix(llma): tag runs list shows empty when data exists",
+          "url": "https://github.com/PostHog/posthog/pull/58087",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62058,
+          "points": 15.51,
+          "positive_reactions": 3,
+          "title": "fix(tasks): salvage dropped-finalization turns at the poll deadline",
+          "url": "https://github.com/PostHog/posthog/pull/62058",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 66482,
+          "points": 15.51,
+          "positive_reactions": 3,
+          "title": "fix(llm-gateway): route @cf models through cloudflare on all api surfaces",
+          "url": "https://github.com/PostHog/posthog/pull/66482",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60650,
+          "points": 15.27,
+          "positive_reactions": 2,
+          "title": "revert(slack): revert randomized ack emoji on @PostHog mentions",
+          "url": "https://github.com/PostHog/posthog/pull/60650",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 4,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 55811,
+          "points": 15.25,
+          "positive_reactions": 3,
+          "title": "fix(llma): scope dark-mode sentiment fix to llma",
+          "url": "https://github.com/PostHog/posthog/pull/55811",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "signals",
+          119
+        ],
+        [
+          "llma",
+          107
+        ],
+        [
+          "alerts",
+          13
+        ],
+        [
+          "inbox",
+          10
+        ],
+        [
+          "skills",
+          9
+        ],
+        [
+          "tasks",
+          8
+        ],
+        [
+          "stamphog",
+          3
+        ],
+        [
+          "mcp",
+          3
+        ]
+      ],
+      "total_points": 3721.53,
+      "why": [
+        "83 top-quartile PRs across 5 contribution types",
+        "75% of PRs show explicit validation and 36% link to tracked issues",
+        "Strongest signal: product (2372.1 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/webjunkie.png?size=96",
+      "avg_top_pr_points": 15.72,
+      "category_counts": {
+        "Documentation": 10,
+        "Engineering Quality": 4,
+        "Maintenance": 9,
+        "Platform": 59,
+        "Product": 70,
+        "Reliability": 87
+      },
+      "category_points": {
+        "Documentation": 66.63,
+        "Engineering Quality": 37.19,
+        "Maintenance": 49.17,
+        "Platform": 722.97,
+        "Product": 873.92,
+        "Reliability": 1213.24
+      },
+      "comments_received": 1072,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 71,
+      "issue_linked_rate": 0.414,
+      "login": "webjunkie",
+      "median_cycle_hours": 13.0,
+      "median_cycle_label": "13.0h",
+      "positive_reactions": 575,
+      "pr_count": 239,
+      "problem_rate": 0.946,
+      "profile_url": "https://github.com/webjunkie",
+      "quality_index_raw": 0.6,
+      "scope_breadth_raw": 53,
+      "score": 77.7,
+      "score_breakdown": {
+        "breadth": 77.2,
+        "collaboration": 82.2,
+        "depth": 93.2,
+        "high_impact": 73.1,
+        "outcome_volume": 78.9,
+        "quality": 62.1
+      },
+      "tested_rate": 0.59,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58052,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "fix(scoping): set default_manager_name = \"all_teams\" on ProductTeamModel",
+          "url": "https://github.com/PostHog/posthog/pull/58052",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62720,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "perf(devex): split generated schema enums into posthog/schema_enums.py",
+          "url": "https://github.com/PostHog/posthog/pull/62720",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62726,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "perf(devex): cut setup-time import chains into the HogQL/schema layer",
+          "url": "https://github.com/PostHog/posthog/pull/62726",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60292,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "perf(devex): skip django migrate walk on product test dbs",
+          "url": "https://github.com/PostHog/posthog/pull/60292",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 13,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60849,
+          "points": 15.65,
+          "positive_reactions": 2,
+          "title": "perf(api): lazy DRF router, defer heavy imports off django.setup()",
+          "url": "https://github.com/PostHog/posthog/pull/60849",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "devex",
+          85
+        ],
+        [
+          "ci",
+          38
+        ],
+        [
+          "visual-review",
+          31
+        ],
+        [
+          "api",
+          8
+        ],
+        [
+          "hogli",
+          6
+        ],
+        [
+          "docs",
+          5
+        ],
+        [
+          "data-warehouse",
+          4
+        ],
+        [
+          "visual_review",
+          3
+        ]
+      ],
+      "total_points": 2963.12,
+      "why": [
+        "71 top-quartile PRs across 6 contribution types",
+        "59% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: reliability (1213.2 weighted points)"
+      ]
+    }
+  ],
+  "generated_at": "2026-06-27T18:35:43.641399+00:00",
+  "method": {
+    "category_meta": {
+      "Documentation": {
+        "base": 4.8,
+        "color": "#d97706",
+        "description": "Docs, examples, copy, and handbook/content updates."
+      },
+      "Engineering Quality": {
+        "base": 7.2,
+        "color": "#059669",
+        "description": "Tests, refactors, CI, developer tooling, and maintainability."
+      },
+      "Maintenance": {
+        "base": 3.8,
+        "color": "#64748b",
+        "description": "Routine chores, dependency bumps, generated updates, and cleanup."
+      },
+      "Platform": {
+        "base": 8.6,
+        "color": "#7c3aed",
+        "description": "Data, infra, APIs, workers, migrations, and shared systems."
+      },
+      "Product": {
+        "base": 9.0,
+        "color": "#2563eb",
+        "description": "User-visible capability, workflow, integration, or UI behavior."
+      },
+      "Reliability": {
+        "base": 9.8,
+        "color": "#dc2626",
+        "description": "Bug fixes, performance, correctness, incidents, and hardening."
+      }
+    },
+    "caveats": [
+      "This uses public GitHub metadata, not private incidents, planning context, customer impact, or reviewer-only nuance.",
+      "PR body templates can be noisy, so scoring relies on visible non-comment text and caps any one signal.",
+      "Review impact is approximated from PR discussion because full review-thread collection for every PR would exceed the time box."
+    ],
+    "components": {
+      "breadth": "Distinct scopes and contribution categories touched.",
+      "collaboration": "Review conversation and positive peer reactions on PRs.",
+      "depth": "Average score of the engineer's five strongest PRs.",
+      "high_impact": "Count of PRs in the top quartile of weighted PR impact for this dataset.",
+      "outcome_volume": "Log-scaled sum of PR impact points so volume helps but cannot dominate alone.",
+      "quality": "Testing evidence, issue linkage, and clear problem/change narratives."
+    },
+    "definition": "Impact is evidence that an engineer moved important product, reliability, or platform outcomes through reviewable work with validation and enough context for others to trust it.",
+    "exclusions": "Obvious bot accounts and authors with fewer than 3 merged PRs in the window.",
+    "high_impact_threshold": 13.84,
+    "weights": {
+      "breadth": 0.1,
+      "collaboration": 0.08,
+      "depth": 0.16,
+      "high_impact": 0.22,
+      "outcome_volume": 0.3,
+      "quality": 0.14
+    }
+  },
+  "repo": "PostHog/posthog",
+  "repo_url": "https://github.com/PostHog/posthog",
+  "source": "GitHub Search API /search/issues, one query per merged date",
+  "top_engineers": [
+    {
+      "avatar_url": "https://github.com/Gilbert09.png?size=96",
+      "avg_top_pr_points": 15.75,
+      "category_counts": {
+        "Documentation": 6,
+        "Engineering Quality": 0,
+        "Maintenance": 1,
+        "Platform": 31,
+        "Product": 260,
+        "Reliability": 435
+      },
+      "category_points": {
+        "Documentation": 37.21,
+        "Engineering Quality": 0,
+        "Maintenance": 4.99,
+        "Platform": 362.33,
+        "Product": 3386.53,
+        "Reliability": 6113.84
+      },
+      "comments_received": 3022,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 347,
+      "issue_linked_rate": 0.115,
+      "login": "Gilbert09",
+      "median_cycle_hours": 15.4,
+      "median_cycle_label": "15.4h",
+      "positive_reactions": 1540,
+      "pr_count": 733,
+      "problem_rate": 0.98,
+      "profile_url": "https://github.com/Gilbert09",
+      "quality_index_raw": 0.637,
+      "scope_breadth_raw": 79,
+      "score": 93.3,
+      "score_breakdown": {
+        "breadth": 90.0,
+        "collaboration": 100.0,
+        "depth": 93.7,
+        "high_impact": 100.0,
+        "outcome_volume": 100.0,
+        "quality": 66.6
+      },
+      "tested_rate": 0.891,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65125,
+          "points": 15.93,
+          "positive_reactions": 3,
+          "title": "fix(google-search-console): match property URLs case-insensitively by scheme and host",
+          "url": "https://github.com/PostHog/posthog/pull/65125",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65071,
+          "points": 15.77,
+          "positive_reactions": 2,
+          "title": "fix(linkedin_ads): retry non-JSON API responses instead of crashing",
+          "url": "https://github.com/PostHog/posthog/pull/65071",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 65082,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "fix(bigquery): treat unparseable private key as non-retryable",
+          "url": "https://github.com/PostHog/posthog/pull/65082",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 64781,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "fix(mysql): retry connect timeouts in-process",
+          "url": "https://github.com/PostHog/posthog/pull/64781",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 6,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 64227,
+          "points": 15.61,
+          "positive_reactions": 2,
+          "title": "fix(data-warehouse): show a friendly error when schema discovery times out",
+          "url": "https://github.com/PostHog/posthog/pull/64227",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "data-warehouse",
+          365
+        ],
+        [
+          "postgres",
+          85
+        ],
+        [
+          "mysql",
+          24
+        ],
+        [
+          "bigquery",
+          23
+        ],
+        [
+          "data-imports",
+          16
+        ],
+        [
+          "google_ads",
+          13
+        ],
+        [
+          "snowflake",
+          12
+        ],
+        [
+          "linkedin_ads",
+          10
+        ]
+      ],
+      "total_points": 9904.9,
+      "why": [
+        "347 top-quartile PRs across 5 contribution types",
+        "89% of PRs show explicit validation and 12% link to tracked issues",
+        "Strongest signal: reliability (6113.8 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/pauldambra.png?size=96",
+      "avg_top_pr_points": 16.11,
+      "category_counts": {
+        "Documentation": 6,
+        "Engineering Quality": 31,
+        "Maintenance": 20,
+        "Platform": 44,
+        "Product": 228,
+        "Reliability": 213
+      },
+      "category_points": {
+        "Documentation": 41.96,
+        "Engineering Quality": 319.98,
+        "Maintenance": 109.6,
+        "Platform": 547.07,
+        "Product": 2975.1,
+        "Reliability": 2993.9
+      },
+      "comments_received": 3413,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 187,
+      "issue_linked_rate": 0.411,
+      "login": "pauldambra",
+      "median_cycle_hours": 7.3,
+      "median_cycle_label": "7.3h",
+      "positive_reactions": 1335,
+      "pr_count": 542,
+      "problem_rate": 0.969,
+      "profile_url": "https://github.com/pauldambra",
+      "quality_index_raw": 0.617,
+      "scope_breadth_raw": 108,
+      "score": 90.8,
+      "score_breakdown": {
+        "breadth": 100.0,
+        "collaboration": 99.9,
+        "depth": 100.0,
+        "high_impact": 89.5,
+        "outcome_volume": 93.9,
+        "quality": 64.2
+      },
+      "tested_rate": 0.62,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 15,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58095,
+          "points": 16.17,
+          "positive_reactions": 3,
+          "title": "perf(frontend): defer authenticated shell to lazy chunk",
+          "url": "https://github.com/PostHog/posthog/pull/58095",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 14,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 61363,
+          "points": 16.17,
+          "positive_reactions": 3,
+          "title": "fix(caching): share query_cache RedisCluster client process-wide",
+          "url": "https://github.com/PostHog/posthog/pull/61363",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62698,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): three memory-leak mop-ups from the background-tab investigation",
+          "url": "https://github.com/PostHog/posthog/pull/62698",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62957,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): load monaco lazily via a CodeEditor facade",
+          "url": "https://github.com/PostHog/posthog/pull/62957",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 63142,
+          "points": 16.07,
+          "positive_reactions": 3,
+          "title": "fix(frontend): release the Max thread graph from the authenticated shell",
+          "url": "https://github.com/PostHog/posthog/pull/63142",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "taxonomic-filter",
+          46
+        ],
+        [
+          "frontend",
+          46
+        ],
+        [
+          "replay",
+          40
+        ],
+        [
+          "user-interviews",
+          36
+        ],
+        [
+          "insights",
+          30
+        ],
+        [
+          "mcp-analytics",
+          25
+        ],
+        [
+          "subscriptions",
+          23
+        ],
+        [
+          "llma",
+          18
+        ]
+      ],
+      "total_points": 6987.61,
+      "why": [
+        "187 top-quartile PRs across 6 contribution types",
+        "62% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: reliability (2993.9 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/sampennington.png?size=96",
+      "avg_top_pr_points": 15.53,
+      "category_counts": {
+        "Documentation": 3,
+        "Engineering Quality": 12,
+        "Maintenance": 6,
+        "Platform": 24,
+        "Product": 179,
+        "Reliability": 131
+      },
+      "category_points": {
+        "Documentation": 21.61,
+        "Engineering Quality": 127.99,
+        "Maintenance": 32.85,
+        "Platform": 310.11,
+        "Product": 2359.93,
+        "Reliability": 1804.93
+      },
+      "comments_received": 1692,
+      "dominant_category": "Product",
+      "high_impact_prs": 132,
+      "issue_linked_rate": 0.408,
+      "login": "sampennington",
+      "median_cycle_hours": 8.1,
+      "median_cycle_label": "8.1h",
+      "positive_reactions": 675,
+      "pr_count": 355,
+      "problem_rate": 0.986,
+      "profile_url": "https://github.com/sampennington",
+      "quality_index_raw": 0.685,
+      "scope_breadth_raw": 53,
+      "score": 83.7,
+      "score_breakdown": {
+        "breadth": 77.2,
+        "collaboration": 87.7,
+        "depth": 89.9,
+        "high_impact": 83.6,
+        "outcome_volume": 86.8,
+        "quality": 72.6
+      },
+      "tested_rate": 0.766,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60843,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "fix(funnels): flow horizontal funnel rows to fit step text",
+          "url": "https://github.com/PostHog/posthog/pull/60843",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 6,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62803,
+          "points": 15.61,
+          "positive_reactions": 2,
+          "title": "fix(quill): clean up charts package public API and core layering",
+          "url": "https://github.com/PostHog/posthog/pull/62803",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 57845,
+          "points": 15.52,
+          "positive_reactions": 2,
+          "title": "fix(trends): move annotation to correct bar for compare against in hog-charts",
+          "url": "https://github.com/PostHog/posthog/pull/57845",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 9,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58711,
+          "points": 15.44,
+          "positive_reactions": 2,
+          "title": "fix(insights): coerce aggregation_target type in multi-source funnels",
+          "url": "https://github.com/PostHog/posthog/pull/58711",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 61054,
+          "points": 15.38,
+          "positive_reactions": 2,
+          "title": "fix(insights): render and style goal lines correctly in hog-charts",
+          "url": "https://github.com/PostHog/posthog/pull/61054",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "insights",
+          150
+        ],
+        [
+          "hog-charts",
+          72
+        ],
+        [
+          "funnels",
+          14
+        ],
+        [
+          "mcp",
+          11
+        ],
+        [
+          "mcp-analytics",
+          10
+        ],
+        [
+          "quill-charts",
+          10
+        ],
+        [
+          "charts",
+          9
+        ],
+        [
+          "trends",
+          8
+        ]
+      ],
+      "total_points": 4657.42,
+      "why": [
+        "132 top-quartile PRs across 6 contribution types",
+        "77% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: product (2359.9 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/andrewm4894.png?size=96",
+      "avg_top_pr_points": 15.51,
+      "category_counts": {
+        "Documentation": 5,
+        "Engineering Quality": 0,
+        "Maintenance": 10,
+        "Platform": 18,
+        "Product": 183,
+        "Reliability": 76
+      },
+      "category_points": {
+        "Documentation": 35.21,
+        "Engineering Quality": 0,
+        "Maintenance": 51.05,
+        "Platform": 220.49,
+        "Product": 2372.1,
+        "Reliability": 1042.68
+      },
+      "comments_received": 1443,
+      "dominant_category": "Product",
+      "high_impact_prs": 83,
+      "issue_linked_rate": 0.356,
+      "login": "andrewm4894",
+      "median_cycle_hours": 1.9,
+      "median_cycle_label": "1.9h",
+      "positive_reactions": 683,
+      "pr_count": 292,
+      "problem_rate": 0.986,
+      "profile_url": "https://github.com/andrewm4894",
+      "quality_index_raw": 0.659,
+      "scope_breadth_raw": 32,
+      "score": 78.6,
+      "score_breakdown": {
+        "breadth": 61.2,
+        "collaboration": 86.3,
+        "depth": 89.5,
+        "high_impact": 75.7,
+        "outcome_volume": 82.9,
+        "quality": 69.3
+      },
+      "tested_rate": 0.75,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 8,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58087,
+          "points": 16.0,
+          "positive_reactions": 3,
+          "title": "fix(llma): tag runs list shows empty when data exists",
+          "url": "https://github.com/PostHog/posthog/pull/58087",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62058,
+          "points": 15.51,
+          "positive_reactions": 3,
+          "title": "fix(tasks): salvage dropped-finalization turns at the poll deadline",
+          "url": "https://github.com/PostHog/posthog/pull/62058",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 66482,
+          "points": 15.51,
+          "positive_reactions": 3,
+          "title": "fix(llm-gateway): route @cf models through cloudflare on all api surfaces",
+          "url": "https://github.com/PostHog/posthog/pull/66482",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 3,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60650,
+          "points": 15.27,
+          "positive_reactions": 2,
+          "title": "revert(slack): revert randomized ack emoji on @PostHog mentions",
+          "url": "https://github.com/PostHog/posthog/pull/60650",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 4,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 55811,
+          "points": 15.25,
+          "positive_reactions": 3,
+          "title": "fix(llma): scope dark-mode sentiment fix to llma",
+          "url": "https://github.com/PostHog/posthog/pull/55811",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "signals",
+          119
+        ],
+        [
+          "llma",
+          107
+        ],
+        [
+          "alerts",
+          13
+        ],
+        [
+          "inbox",
+          10
+        ],
+        [
+          "skills",
+          9
+        ],
+        [
+          "tasks",
+          8
+        ],
+        [
+          "stamphog",
+          3
+        ],
+        [
+          "mcp",
+          3
+        ]
+      ],
+      "total_points": 3721.53,
+      "why": [
+        "83 top-quartile PRs across 5 contribution types",
+        "75% of PRs show explicit validation and 36% link to tracked issues",
+        "Strongest signal: product (2372.1 weighted points)"
+      ]
+    },
+    {
+      "avatar_url": "https://github.com/webjunkie.png?size=96",
+      "avg_top_pr_points": 15.72,
+      "category_counts": {
+        "Documentation": 10,
+        "Engineering Quality": 4,
+        "Maintenance": 9,
+        "Platform": 59,
+        "Product": 70,
+        "Reliability": 87
+      },
+      "category_points": {
+        "Documentation": 66.63,
+        "Engineering Quality": 37.19,
+        "Maintenance": 49.17,
+        "Platform": 722.97,
+        "Product": 873.92,
+        "Reliability": 1213.24
+      },
+      "comments_received": 1072,
+      "dominant_category": "Reliability",
+      "high_impact_prs": 71,
+      "issue_linked_rate": 0.414,
+      "login": "webjunkie",
+      "median_cycle_hours": 13.0,
+      "median_cycle_label": "13.0h",
+      "positive_reactions": 575,
+      "pr_count": 239,
+      "problem_rate": 0.946,
+      "profile_url": "https://github.com/webjunkie",
+      "quality_index_raw": 0.6,
+      "scope_breadth_raw": 53,
+      "score": 77.7,
+      "score_breakdown": {
+        "breadth": 77.2,
+        "collaboration": 82.2,
+        "depth": 93.2,
+        "high_impact": 73.1,
+        "outcome_volume": 78.9,
+        "quality": 62.1
+      },
+      "tested_rate": 0.59,
+      "top_prs": [
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 58052,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "fix(scoping): set default_manager_name = \"all_teams\" on ProductTeamModel",
+          "url": "https://github.com/PostHog/posthog/pull/58052",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62720,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "perf(devex): split generated schema enums into posthog/schema_enums.py",
+          "url": "https://github.com/PostHog/posthog/pull/62720",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 5,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 62726,
+          "points": 15.75,
+          "positive_reactions": 3,
+          "title": "perf(devex): cut setup-time import chains into the HogQL/schema layer",
+          "url": "https://github.com/PostHog/posthog/pull/62726",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 7,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60292,
+          "points": 15.69,
+          "positive_reactions": 2,
+          "title": "perf(devex): skip django migrate walk on product test dbs",
+          "url": "https://github.com/PostHog/posthog/pull/60292",
+          "weak_or_missing_tests": false
+        },
+        {
+          "bonuses": [
+            "linked to an issue",
+            "explicit validation",
+            "clear problem/change narrative",
+            "review discussion"
+          ],
+          "category": "Reliability",
+          "comments": 13,
+          "has_issue_ref": true,
+          "has_test_signal": true,
+          "number": 60849,
+          "points": 15.65,
+          "positive_reactions": 2,
+          "title": "perf(api): lazy DRF router, defer heavy imports off django.setup()",
+          "url": "https://github.com/PostHog/posthog/pull/60849",
+          "weak_or_missing_tests": false
+        }
+      ],
+      "top_scopes": [
+        [
+          "devex",
+          85
+        ],
+        [
+          "ci",
+          38
+        ],
+        [
+          "visual-review",
+          31
+        ],
+        [
+          "api",
+          8
+        ],
+        [
+          "hogli",
+          6
+        ],
+        [
+          "docs",
+          5
+        ],
+        [
+          "data-warehouse",
+          4
+        ],
+        [
+          "visual_review",
+          3
+        ]
+      ],
+      "total_points": 2963.12,
+      "why": [
+        "71 top-quartile PRs across 6 contribution types",
+        "59% of PRs show explicit validation and 41% link to tracked issues",
+        "Strongest signal: reliability (1213.2 weighted points)"
+      ]
+    }
+  ],
+  "total_prs": 9590,
+  "window_end": "2026-06-27",
+  "window_start": "2026-03-29"
+}
